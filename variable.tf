@@ -21,3 +21,9 @@ variable "source_bucket_arn" {
   description = "source bucket"
   type        = string
   }
+
+variable "tags" {
+  description = "Tags to set for all resources"
+  type        = map(string)
+    }
+}
