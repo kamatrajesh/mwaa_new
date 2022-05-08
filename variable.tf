@@ -12,7 +12,7 @@ variable "subnet_ids" {
   }
 
 variable "execution_role_arn" {
-  description = "subnet ids"
+  description = "execution role"
   type        = string
   }
 
