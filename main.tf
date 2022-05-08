@@ -38,8 +38,5 @@ resource "aws_mwaa_environment" "example" {
   }
 
   source_bucket_arn = var.source_bucket_arn
-  tags = {
-    Name        = var.Name 
-    Environment = var.Environment
-  }
+  tags =  var.resource_tags
 }
