@@ -33,7 +33,7 @@ resource "aws_mwaa_environment" "example" {
 
   network_configuration {
     security_group_ids = var.security_group_ids
-    subnet_ids         = var.subnet_ids1
+    subnet_ids         = var.subnet_ids
   }
 
   source_bucket_arn = aws_s3_bucket.example.arn
