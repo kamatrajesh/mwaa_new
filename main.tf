@@ -1,6 +1,6 @@
 resource "aws_mwaa_environment" "example" {
   dag_s3_path        = "dag/"
-  execution_role_arn = var.execution_role_arn1
+  execution_role_arn = var.execution_role_arn
 
   logging_configuration {
     dag_processing_logs {
@@ -29,12 +29,12 @@ resource "aws_mwaa_environment" "example" {
     }
   }
 
-  name = var.name1
+  name = var.name
 
   network_configuration {
-    security_group_ids = var.security_group_ids1
+    security_group_ids = var.security_group_ids
     subnet_ids         = var.subnet_ids1
   }
 
-  source_bucket_arn = aws_s3_bucket.example.arn1
+  source_bucket_arn = aws_s3_bucket.example.arn
 }
