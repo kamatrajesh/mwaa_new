@@ -20,3 +20,8 @@ variable "execution_role_arn" {
   description = "subnet ids"
   type        = string
   }
+
+variable "source_bucket_arn" {
+  description = "source bucket"
+  type        = string
+  }
