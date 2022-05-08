@@ -36,5 +36,5 @@ resource "aws_mwaa_environment" "example" {
     subnet_ids         = var.subnet_ids
   }
 
-  execution_role_arn = var.execution_role_arn
+  source_bucket_arn = aws_s3_bucket.example.arn
 }
