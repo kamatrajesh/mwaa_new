@@ -1,6 +1,7 @@
 resource "aws_mwaa_environment" "example" {
   dag_s3_path        = "dag/"
   execution_role_arn = var.execution_role_arn
+  region="us-east-1"
 
   logging_configuration {
     dag_processing_logs {
