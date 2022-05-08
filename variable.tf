@@ -6,7 +6,7 @@ variable "security_group_ids" {
   description = "security group ids"
   type        = list(string)
   }
-variable "subnet_ids" {
+variable "subnet_ids1" {
   description = "subnet ids"
   type        = list(string)
   }
@@ -16,10 +16,6 @@ variable "execution_role_arn" {
   type        = string
   }
 
-variable "execution_role_arn" {
-  description = "subnet ids"
-  type        = string
-  }
 
 variable "source_bucket_arn" {
   description = "source bucket"
