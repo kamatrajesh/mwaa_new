@@ -1,5 +1,5 @@
 resource "aws_mwaa_environment" "example" {
-  dag_s3_path        = "dags/"
+  dag_s3_path        = "dag/"
   execution_role_arn = var.execution_role_arn
 
   logging_configuration {
