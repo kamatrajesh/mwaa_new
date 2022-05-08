@@ -6,7 +6,7 @@ variable "security_group_ids" {
   description = "security group ids"
   type        = list(string)
   }
-variable "subnet_ids1" {
+variable "subnet_ids" {
   description = "subnet ids"
   type        = list(string)
   }
